@@ -78,6 +78,7 @@ def estadio():
 	else:
 		print "Error no se encuentra el estadio"
 
+
 @route('/static/<filepath:path>')
 def server_static(filepath):
     return static_file(filepath, root=os.environ['OPENSHIFT_REPO_DIR']+'static/')
