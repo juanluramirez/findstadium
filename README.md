@@ -17,3 +17,6 @@ Create a python application based on the code in this repository
 That's it, you can now checkout your application at:
 
     http://bottle-$yournamespace.rhcloud.com
+
+Aplicacion hecha en python, que utiliza las api's de google maps.
+Introduciendo una cuidad y un radio en metros, vamos a observar una lista de todos los estadios de esa cuidad, al seleccionar uno de ellos, seleccionamos un lugar(Restaurante, bar, Hoteles, Hospitales) y un radio y nos marcara todos los Restaurante, bar, Hoteles, Hospitales(Segun eligamos) que estan en un radio que tu tienes que meter por teclado (en metros).
