@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 from bottle import route,default_app,request,template,static_file
 from lxml import etree
 import requests
@@ -40,6 +41,7 @@ def estadio():
 		return template("estadio.tpl",latitud=float(latitud) ,longitud=float(longitud), estadios=estadios)
 	else:
 		print "Error no se encuentra la cuidad"
+
 @route('/mapa',method='POST')
 def estadio():
     clave="AIzaSyBiVmIZCcnp0vMtBJoIIOPt1HZPhZ9xgos"
