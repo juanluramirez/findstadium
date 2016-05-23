@@ -2,3 +2,4 @@
 *.pyo
 *~
 ./wsgi/bottle_local.py
+./wsgi/mybottleapp.pyc
