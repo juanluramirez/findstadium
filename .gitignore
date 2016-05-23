@@ -1,3 +1,4 @@
 *.pyc
 *.pyo
 *~
+./wsgi/bottle_local.py

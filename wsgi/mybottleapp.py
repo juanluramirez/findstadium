@@ -38,7 +38,8 @@ def estadio():
 				local.append(longitud_establecimiento)
 				estadios.append(local)
 		return template("estadio.tpl",latitud=float(latitud) ,longitud=float(longitud), estadios=estadios)
-
+	else:
+		print "Error no se encuentra la cuidad"
 @route('/mapa',method='POST')
 def estadio():
     clave="AIzaSyBiVmIZCcnp0vMtBJoIIOPt1HZPhZ9xgos"
@@ -72,6 +73,8 @@ def estadio():
 				local.append(longitud_establecimiento)
 				establecimientos.append(local)
 		return template("mapa.tpl",lat=float(latitud) ,lon=float(longitud), loc=establecimientos)
+	else:
+		print "Error no se encuentra el estadio"
 
 @route('/static/<filepath:path>')
 def server_static(filepath):
